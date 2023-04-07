@@ -10,6 +10,7 @@ const homeStartingContent = "I am Nasir Daneshiar I am a programmer and an engin
 const aboutContent = "I am a full stack web developer, Node.js(express) and React, and also web 3 development, Solidity, and Motoko(the language for internet computer protocol). I am also an Artificial intelligence specialist who can solve computer vision and NLP tasks.    My university education is about robotics and Mechatronics, I worked for 2 years at Behyaar company as an FPGA and LabVIEW programmer. after that, I started a startup about AI in financial markets but after 3 years I decided to change my carrier.I'm very interested in the web(3), AI, and the Internet of robotic things.";
 const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
 
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -89,6 +90,6 @@ app.post ("/compose",function(req,res){
     res.redirect("/")
 })
 
-app.listen(3000,function(){
+app.listen(port,function(){
     console.log("Server started on port 3000");
 });
