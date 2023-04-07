@@ -26,7 +26,7 @@ let posts= [];
 const mongoose = require("mongoose")
 
 mongoose.set("strictQuery", false);
-mongoose.connect('mongodb://127.0.0.1:27017/Weblog');
+mongoose.connect('mongodb+srv://nasir123:'+process.env.mongodbpas+'@cluster0.2s0bvae.mongodb.net/Weblog');
 
 const postSchema = new mongoose.Schema({
     titlePost : String,
